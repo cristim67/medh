@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+
+# datele se regenerează din pipeline; EM-DAT nu are voie să fie redistribuit
+data/raw/
+data/interim/
+
+# note de lucru personale (rămân doar local)
+notes/
+
+# fișiere temporare Office
+~$*

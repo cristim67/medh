@@ -1,0 +1,32 @@
+trasatura,bloc,sursa,set_versiune,fereastra,rezolutie,unitate,transformare,in_X,lipsa_%
+s1_dvv,imagine,Sentinel-1,"COPERNICUS/S1_GRD (IW, VV+VH)",pre t0−60…−10 z / post t0+2…+30 z,10 m (≥ 20 m la reducere),dB,z,True,0.0
+s1_dvh,imagine,Sentinel-1,"COPERNICUS/S1_GRD (IW, VV+VH)",pre t0−60…−10 z / post t0+2…+30 z,10 m (≥ 20 m la reducere),dB,z,True,0.0
+s1_flooded,imagine,Sentinel-1,"COPERNICUS/S1_GRD (IW, VV+VH)",pre t0−60…−10 z / post t0+2…+30 z,10 m (≥ 20 m la reducere),fracție din AOI cu ΔVV < −3 dB,z,True,0.0
+s1_flooded_km2,imagine,Sentinel-1,"COPERNICUS/S1_GRD (IW, VV+VH)",pre t0−60…−10 z / post t0+2…+30 z,10 m (≥ 20 m la reducere),km²,log1p+z,True,0.0
+s2_dndvi,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),– (post − pre),z,True,49.9
+s2_dnbr,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),– (post − pre),z,True,49.9
+s2_dmndwi,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),– (post − pre),z,True,49.9
+s2_burnt,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),"fracție cu dNBR < −0,27",z,True,49.9
+s2_burnt_km2,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),km²,log1p+z,True,49.9
+s2_newwater,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),"fracție cu dMNDWI > 0,2",z,True,49.9
+s2_newwater_km2,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),km²,log1p+z,True,49.9
+s2_clear_pre,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),fracție pixeli clari,z,True,0.0
+s2_clear_post,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),fracție pixeli clari,z,True,0.0
+s2_ok,imagine,Sentinel-2,COPERNICUS/S2_SR_HARMONIZED (mască SCL),pre t0−60…−10 z / post t0+2…+30 z,10–20 m (≥ 20 m),0/1 (S2 clar ≥ 50%),z,True,0.0
+era5_tp_event_mm,meteo,ERA5-Land,"ECMWF/ERA5_LAND/DAILY_AGGR, HOURLY (vânt)",t0−L…t0+2 z (L = 5 / 14),"0,1° (~9 km), buffer 5 km",mm,log1p+z,True,0.0
+era5_tp_antecedent_mm,meteo,ERA5-Land,"ECMWF/ERA5_LAND/DAILY_AGGR, HOURLY (vânt)",t0−60…−10 z,"0,1° (~9 km)",mm,log1p+z,True,0.0
+era5_t2m_max_c,meteo,ERA5-Land,"ECMWF/ERA5_LAND/DAILY_AGGR, HOURLY (vânt)",t0−L…t0+2 z,"0,1° (~9 km)",°C,z,True,0.0
+era5_wind10m_max_ms,meteo,ERA5-Land,"ECMWF/ERA5_LAND/DAILY_AGGR, HOURLY (vânt)",t0−L…t0+2 z,"0,1°, orar",m/s,z,True,0.0
+txt_area_ha,text_struct,Text EMS,"Copernicus EMS, câmpul reason (regex, pasul 7)",la activare,activare,ha (max. menționat),log1p+z,True,0.0
+txt_people,text_struct,Text EMS,"Copernicus EMS, câmpul reason (regex, pasul 7)",la activare,activare,persoane (max. menționat),log1p+z,True,0.0
+txt_deaths,text_struct,Text EMS,"Copernicus EMS, câmpul reason (regex, pasul 7)",la activare,activare,persoane (max. menționat),log1p+z,True,0.0
+txt_has_number,text_struct,Text EMS,"Copernicus EMS, câmpul reason (regex, pasul 7)",la activare,activare,0/1,z,True,0.0
+txt_len_words,text_struct,Text EMS,"Copernicus EMS, câmpul reason (regex, pasul 7)",la activare,activare,cuvinte,log1p+z,True,0.0
+ems_mapped_area_ha,referință,Copernicus EMS / EM-DAT,"poligoane observed event, uniune EPSG:3035",–,AOI,ha,log1p,False,5.4
+ems_pop_affected,referință,Copernicus EMS / EM-DAT,statistici EMS (doar EMSR656+),–,AOI,persoane,log1p,False,72.6
+emdat_deaths,referință,Copernicus EMS / EM-DAT,EM-DAT export 2026-10-19,eveniment,țară,persoane,log1p,False,79.0
+emdat_affected,referință,Copernicus EMS / EM-DAT,EM-DAT export 2026-10-19,eveniment,țară,persoane,log1p,False,68.8
+emdat_damage_adj_kusd,referință,Copernicus EMS / EM-DAT,EM-DAT export 2026-10-19,eveniment,țară,mii USD,log1p,False,87.0
+aoi_area_km2,referință,Copernicus EMS / EM-DAT,"AOI EMS, uniune",–,AOI,km²,log1p,False,0.0
+tfidf:<termen>,text_emb,Text EMS,"TF-IDF 1–2-grame, min_df=3, max 2000, stop words EN, sublinear_tf",la activare,activare,pondere TF-IDF,L2 pe rând; vocabular pe train,True,0.0
+bge:<0..1023>,text_emb,Text EMS,"BAAI/bge-m3 (dense, 1024), sentence-transformers",la activare,activare,–,L2 (model fix),variantă,0.0

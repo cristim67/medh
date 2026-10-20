@@ -1,0 +1,1 @@
+Slide 2: cum ați adus sursele pe aceeași unitate și același pas de timp (grid, agregare, interpolare, goluri tratate) și matricea finală unitate × trăsături, cu trăsăturile grupate pe sursă și statistici descriptive (distribuții, corelații între surse). Link repo obligatoriu.
