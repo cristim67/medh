@@ -1,0 +1,18 @@
+[project]
+name = "mede-u19"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "earthengine-api>=1.7.49",
+    "geopandas>=1.2.0",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.6",
+    "pyogrio>=0.13.0",
+    "remotezip>=0.12.6",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "shapely>=2.2.0",
+    "tabulate>=0.10.0",
+    "tqdm>=4.70.1",
+]

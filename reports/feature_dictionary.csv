@@ -1,0 +1,26 @@
+trasatura,bloc,sursa,unitate,transformare
+s1_dvv,imagine,Sentinel-1 GRD,dB,z
+s1_dvh,imagine,Sentinel-1 GRD,dB,z
+s1_flooded,imagine,Sentinel-1 GRD,fracție,z
+s1_flooded_km2,imagine,Sentinel-1 GRD,km²,log1p+z
+s2_dndvi,imagine,Sentinel-2 L2A,–,z
+s2_dnbr,imagine,Sentinel-2 L2A,–,z
+s2_dmndwi,imagine,Sentinel-2 L2A,–,z
+s2_burnt,imagine,Sentinel-2 L2A,fracție,z
+s2_burnt_km2,imagine,Sentinel-2 L2A,km²,log1p+z
+s2_newwater,imagine,Sentinel-2 L2A,fracție,z
+s2_newwater_km2,imagine,Sentinel-2 L2A,km²,log1p+z
+s2_clear_pre,imagine,Sentinel-2 L2A,fracție,z
+s2_clear_post,imagine,Sentinel-2 L2A,fracție,z
+s2_ok,imagine,Sentinel-2 L2A,0/1,z
+era5_tp_event_mm,meteo,ERA5-Land,mm,log1p+z
+era5_tp_antecedent_mm,meteo,ERA5-Land,mm,log1p+z
+era5_t2m_max_c,meteo,ERA5-Land,°C,z
+era5_wind10m_max_ms,meteo,ERA5-Land,m/s,z
+ems_mapped_area_ha,ems,Copernicus EMS,ha,log1p+z
+ems_pop_affected,ems,Copernicus EMS (doar EMSR656+),persoane,log1p+z
+emdat_deaths,ems,EM-DAT,persoane,log1p+z
+emdat_affected,ems,EM-DAT,persoane,log1p+z
+emdat_damage_adj_kusd,ems,EM-DAT,mii USD (ajustat),log1p+z
+aoi_area_km2,ems,Copernicus EMS,km²,log1p+z
+n_aois,ems,Copernicus EMS,număr,log1p+z

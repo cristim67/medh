@@ -1,0 +1,47 @@
+# Raport de acoperire — U19
+
+Generat de `pipeline/05_align.py`. Unitatea: activarea EMS (n = 411).
+
+## Pâlnia de aliniere
+
+| Pas | Activări | % din selectate |
+|---|---:|---:|
+| selectate (EMSR, Europa, 2017–2025, flood/fire/storm) | 411 | 100% |
+| cu text ≥ 100 caractere | 406 | 99% |
+| + AOI (poligon) | 397 | 97% |
+| + extracție GEE reușită | 396 | 96% |
+| + S1 pre și post | 394 | 96% |
+| + ERA5-Land | 391 | 95% |
+| = nucleu: text + S1 + ERA5 | 391 | 95% |
+| + S2 clar (≥ 50%) pre și post | 196 | 48% |
+
+## Pe surse, tip și an
+
+Coloanele `*_ok` numără activările pentru care sursa e prezentă (definițiile sunt în script).
+
+| grup      |   n |   text_ok |   aoi_ok |   gee_ok |   s1_ok |   s2_ok |   era5_ok |   gdacs_ok |   emdat_ok |   ems_area_ok |   nucleu_text_s1_era5 |   nucleu_plus_s2 |
+|:----------|----:|----------:|---------:|---------:|--------:|--------:|----------:|-----------:|-----------:|--------------:|----------------------:|-----------------:|
+| total     | 411 |       406 |      402 |      401 |     398 |     200 |       397 |        136 |        137 |           382 |                   391 |              196 |
+| tip=fire  | 246 |       241 |      243 |      243 |     240 |     176 |       241 |         66 |         74 |           239 |                   235 |              173 |
+| tip=flood | 140 |       140 |      136 |      135 |     135 |      22 |       135 |         69 |         58 |           131 |                   135 |               22 |
+| tip=storm |  25 |        25 |       23 |       23 |      23 |       2 |        21 |          1 |          5 |            12 |                    21 |                1 |
+| an=2017   |  40 |        38 |       39 |       39 |      38 |      27 |        37 |          3 |         13 |            34 |                    35 |               24 |
+| an=2018   |  46 |        46 |       45 |       45 |      45 |      11 |        45 |          4 |         17 |            45 |                    45 |               11 |
+| an=2019   |  42 |        39 |       42 |       42 |      41 |      23 |        42 |          5 |          8 |            41 |                    38 |               22 |
+| an=2020   |  39 |        39 |       36 |       36 |      36 |      14 |        36 |         13 |         10 |            36 |                    36 |               14 |
+| an=2021   |  44 |        44 |       42 |       42 |      42 |      25 |        42 |         25 |         17 |            42 |                    42 |               25 |
+| an=2022   |  60 |        60 |       58 |       58 |      58 |      28 |        57 |         21 |         24 |            57 |                    57 |               28 |
+| an=2023   |  46 |        46 |       46 |       45 |      45 |      25 |        45 |         26 |         25 |            42 |                    45 |               25 |
+| an=2024   |  47 |        47 |       47 |       47 |      47 |      21 |        47 |         18 |         14 |            44 |                    47 |               21 |
+| an=2025   |  47 |        47 |       47 |       47 |      46 |      26 |        46 |         21 |          9 |            41 |                    46 |               26 |
+
+## Goluri per sursă (% din selectate)
+
+- `text_ok`: lipsă la 1%
+- `aoi_ok`: lipsă la 2%
+- `s1_ok`: lipsă la 3%
+- `s2_ok`: lipsă la 51%
+- `era5_ok`: lipsă la 3%
+- `gdacs_ok`: lipsă la 67%
+- `emdat_ok`: lipsă la 67%
+- `ems_area_ok`: lipsă la 7%
