@@ -22,6 +22,11 @@ medh/
 │   ├── CP2_U19.pdf
 │   ├── trasaturi_U19.md      # X documentată, analiza uni/bivariată, PCA pe LOYO
 │   └── cerinta.md
+├── CP3/                      # relații + reprezentare neliniară (săpt. 8)
+│   ├── CP3_U19.pptx
+│   ├── CP3_U19.pdf
+│   ├── relatii_U19.md        # protocol, tabelul PCA vs. metoda aleasă pe surse, harta relațiilor
+│   └── cerinta.md
 ├── pipeline/
 │   ├── config.py             # perioada, tipurile, țările, ferestrele pre/post, proiectul GEE
 │   ├── 01_ems.py             # activările Copernicus EMS: text, AOI, suprafața mapată
@@ -31,7 +36,9 @@ medh/
 │   ├── 05_align.py           # tabelul aliniat + raportul de acoperire
 │   ├── 06_matrix.py          # matricea X + scalarea pe fold-uri LOYO
 │   ├── 07_text.py            # text: data evenimentului, cifre de magnitudine, embeddings BGE-M3
-│   └── 08_explore.py         # analiza uni/bivariată, RV între surse, PCA pe LOYO + metrici
+│   ├── 08_explore.py         # analiza uni/bivariată, RV între surse, PCA pe LOYO + metrici
+│   ├── 09_relations.py       # harta relațiilor: MI, CCA, grafuri kNN, aportul surselor la magnitudine
+│   └── 10_representations.py # PCA vs. autoencoder / kernel PCA / UMAP / CCA, pe surse, seed-uri, subperioade
 ├── reports/                  # generate de pipeline
 │   ├── coverage.md           # pâlnia de aliniere, pe tip și an
 │   ├── coverage.csv
@@ -61,6 +68,8 @@ uv run python pipeline/05_align.py    # tabelul aliniat + raportul de acoperire
 uv run python pipeline/06_matrix.py   # matricea X + scalarea pe fold-uri LOYO
 uv run python pipeline/07_text.py     # trăsături de text + BGE-M3 (descarcă modelul, ~2,2 GB)
 uv run python pipeline/08_explore.py  # analiza uni/bivariată + PCA pe LOYO
+uv run python pipeline/09_relations.py        # harta relațiilor între surse
+uv run python pipeline/10_representations.py  # tabelul principal CP3 (~1–2 min)
 ```
 
 Opțiuni de test: `--limit N`, `--codes EMSR207,EMSR692`, `--refresh` (ignoră cache-ul).
@@ -77,5 +86,7 @@ Opțiuni de test: `--limit N`, `--codes EMSR207,EMSR692`, `--refresh` (ignoră c
 | 6 | `pipeline/06_matrix.py` | `X_raw.csv`, `reports/x_shape.md` |
 | 7 | `pipeline/07_text.py` | `text_features.csv`, `text_bge_m3.npy`, `reports/text_dates.md` |
 | 8 | `pipeline/08_explore.py` | `reports/feature_dictionary.csv`, `univariate.csv`, `spearman.csv`, `block_rv_*.csv`, `magnitude_by_source.md`, `pca_loyo.md`, `pca_metrics.csv`, `pca_k_sweep.csv`, `pca_loadings.csv`, `figures/` |
+| 9 | `pipeline/09_relations.py` | `reports/relations.md`, `mi_magnitude.csv`, `cca_pairs.csv`, `knn_overlap.csv`, `magnitude_increment.csv`, `hedging.csv`, `figures/relations_map.png`, `figures/mi_magnitude.png` |
+| 10 | `pipeline/10_representations.py` | `reports/representations.md`, `representations_runs.csv`, `representations_summary.csv`, `representations_stability.csv`, `figures/representations.png` |
 
 `data/` nu e versionat: totul se regenerează din scripturi.

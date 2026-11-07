@@ -1,0 +1,1 @@
+Slide 2: PCA ca baseline și metoda aleasă pentru comparație (ex. UMAP, t-SNE, autoencoder, CCA/multi-view), aplicate pe fiecare sursă separat și pe datele combinate. Protocolul: ce comparați, cu ce metrici (varianță explicată, trustworthiness, eroare de reconstrucție) și cum verificați stabilitatea (seed-uri, subperioade). Link repo obligatoriu.

@@ -1,0 +1,67 @@
+tinta,tip,model,rho,ic_lo,ic_hi,n
+ems_mapped_area_ha,all,doar aria AOI,0.541,0.464,0.612,370
+ems_mapped_area_ha,all,doar meteo,0.095,-0.004,0.188,370
+ems_mapped_area_ha,all,doar text,0.259,0.158,0.363,370
+ems_mapped_area_ha,all,doar imagine (fracții),0.196,0.095,0.292,370
+ems_mapped_area_ha,all,doar imagine,0.704,0.640,0.759,370
+ems_mapped_area_ha,all,imagine + text,0.723,0.659,0.774,370
+ems_mapped_area_ha,all,imagine (fracții) + text,0.322,0.232,0.410,370
+ems_mapped_area_ha,all,imagine + meteo + text,0.722,0.666,0.773,370
+ems_mapped_area_ha,all,Δ imagine + text − doar imagine,0.019,-0.016,0.056,370
+ems_mapped_area_ha,all,Δ imagine + text − doar text,0.464,0.369,0.562,370
+ems_mapped_area_ha,all,Δ imagine (fracții) + text − doar imagine (fracții),0.126,0.035,0.213,370
+ems_mapped_area_ha,fire,doar aria AOI,0.756,0.672,0.817,230
+ems_mapped_area_ha,fire,doar meteo,0.338,0.212,0.449,230
+ems_mapped_area_ha,fire,doar text,0.422,0.307,0.538,230
+ems_mapped_area_ha,fire,doar imagine (fracții),0.346,0.226,0.450,230
+ems_mapped_area_ha,fire,doar imagine,0.804,0.734,0.860,230
+ems_mapped_area_ha,fire,imagine + text,0.832,0.769,0.878,230
+ems_mapped_area_ha,fire,imagine (fracții) + text,0.469,0.358,0.570,230
+ems_mapped_area_ha,fire,imagine + meteo + text,0.821,0.757,0.874,230
+ems_mapped_area_ha,fire,Δ imagine + text − doar imagine,0.028,0.002,0.057,230
+ems_mapped_area_ha,fire,Δ imagine + text − doar text,0.410,0.303,0.522,230
+ems_mapped_area_ha,fire,Δ imagine (fracții) + text − doar imagine (fracții),0.123,0.032,0.216,230
+ems_mapped_area_ha,flood,doar aria AOI,0.686,0.570,0.771,129
+ems_mapped_area_ha,flood,doar meteo,0.119,-0.050,0.294,129
+ems_mapped_area_ha,flood,doar text,0.097,-0.069,0.264,129
+ems_mapped_area_ha,flood,doar imagine (fracții),-0.290,-0.446,-0.132,129
+ems_mapped_area_ha,flood,doar imagine,0.635,0.506,0.729,129
+ems_mapped_area_ha,flood,imagine + text,0.631,0.509,0.728,129
+ems_mapped_area_ha,flood,imagine (fracții) + text,-0.065,-0.232,0.089,129
+ems_mapped_area_ha,flood,imagine + meteo + text,0.632,0.516,0.728,129
+ems_mapped_area_ha,flood,Δ imagine + text − doar imagine,-0.004,-0.056,0.046,129
+ems_mapped_area_ha,flood,Δ imagine + text − doar text,0.534,0.357,0.720,129
+ems_mapped_area_ha,flood,Δ imagine (fracții) + text − doar imagine (fracții),0.225,0.077,0.381,129
+emdat_affected,all,doar aria AOI,-0.471,-0.601,-0.321,122
+emdat_affected,all,doar meteo,0.108,-0.090,0.292,122
+emdat_affected,all,doar text,0.384,0.214,0.534,122
+emdat_affected,all,doar imagine (fracții),-0.046,-0.229,0.125,122
+emdat_affected,all,doar imagine,0.122,-0.059,0.285,122
+emdat_affected,all,imagine + text,0.328,0.157,0.483,122
+emdat_affected,all,imagine (fracții) + text,0.286,0.105,0.452,122
+emdat_affected,all,imagine + meteo + text,0.269,0.076,0.432,122
+emdat_affected,all,Δ imagine + text − doar imagine,0.206,0.063,0.348,122
+emdat_affected,all,Δ imagine + text − doar text,-0.055,-0.137,0.030,122
+emdat_affected,all,Δ imagine (fracții) + text − doar imagine (fracții),0.333,0.176,0.488,122
+emdat_affected,fire,doar aria AOI,-0.417,-0.646,-0.176,63
+emdat_affected,fire,doar meteo,-0.527,-0.728,-0.269,63
+emdat_affected,fire,doar text,0.151,-0.086,0.385,63
+emdat_affected,fire,doar imagine (fracții),-0.536,-0.725,-0.308,63
+emdat_affected,fire,doar imagine,-0.465,-0.653,-0.232,63
+emdat_affected,fire,imagine + text,-0.236,-0.468,0.010,63
+emdat_affected,fire,imagine (fracții) + text,-0.237,-0.450,-0.003,63
+emdat_affected,fire,imagine + meteo + text,-0.196,-0.425,0.056,63
+emdat_affected,fire,Δ imagine + text − doar imagine,0.229,-0.080,0.543,63
+emdat_affected,fire,Δ imagine + text − doar text,-0.387,-0.609,-0.162,63
+emdat_affected,fire,Δ imagine (fracții) + text − doar imagine (fracții),0.299,0.025,0.554,63
+emdat_affected,flood,doar aria AOI,0.062,-0.208,0.331,56
+emdat_affected,flood,doar meteo,-0.182,-0.445,0.084,56
+emdat_affected,flood,doar text,0.182,-0.056,0.417,56
+emdat_affected,flood,doar imagine (fracții),-0.052,-0.317,0.203,56
+emdat_affected,flood,doar imagine,0.173,-0.065,0.391,56
+emdat_affected,flood,imagine + text,0.341,0.104,0.558,56
+emdat_affected,flood,imagine (fracții) + text,0.295,0.028,0.514,56
+emdat_affected,flood,imagine + meteo + text,0.339,0.108,0.559,56
+emdat_affected,flood,Δ imagine + text − doar imagine,0.169,-0.061,0.417,56
+emdat_affected,flood,Δ imagine + text − doar text,0.160,-0.059,0.366,56
+emdat_affected,flood,Δ imagine (fracții) + text − doar imagine (fracții),0.347,0.073,0.601,56

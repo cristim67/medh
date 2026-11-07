@@ -1,0 +1,11 @@
+tip,variabila,rho_cu_incertitudinea,p_perm,n,texte_cu_marker_%
+all,|ŷ text − ŷ imagine|,-0.057,0.270,370,56.010
+all,|eroare text|,0.006,0.903,370,56.010
+all,|eroare imagine|,0.133,0.009,370,56.010
+fire,|ŷ text − ŷ imagine|,0.026,0.711,230,49.362
+fire,|eroare text|,0.023,0.714,230,49.362
+fire,|eroare imagine|,0.123,0.062,230,49.362
+flood,|ŷ text − ŷ imagine|,-0.121,0.160,129,69.630
+flood,|eroare text|,-0.159,0.089,129,69.630
+flood,|eroare imagine|,-0.167,0.052,129,69.630
+fire,|log ha text − log ha S2| (texte cu cifră),0.050,0.794,33,93.939

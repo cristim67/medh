@@ -1,0 +1,16 @@
+tip,pereche,r_canonic_test,nul_p95,n
+all,imagine ↔ text,0.817,0.084,391
+all,imagine ↔ meteo,0.813,0.079,391
+all,meteo ↔ text,0.863,0.098,391
+all,imagine ↔ text_bge,0.817,0.066,391
+all,imagine ↔ text_struct,0.275,0.121,391
+fire,imagine ↔ text,0.650,0.124,235
+fire,imagine ↔ meteo,0.541,0.137,235
+fire,meteo ↔ text,0.467,0.152,235
+fire,imagine ↔ text_bge,0.645,0.112,235
+fire,imagine ↔ text_struct,0.068,0.095,235
+flood,imagine ↔ text,0.164,0.195,135
+flood,imagine ↔ meteo,0.473,0.245,135
+flood,meteo ↔ text,0.446,0.128,135
+flood,imagine ↔ text_bge,0.511,0.108,135
+flood,imagine ↔ text_struct,0.172,0.267,135

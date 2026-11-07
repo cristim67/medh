@@ -1,0 +1,9 @@
+sursa,reprezentare,mean,min
+imagine,Autoencoder (aleasă),0.8,0.77
+imagine,UMAP,0.87,0.8
+meteo,Autoencoder (aleasă),0.88,0.82
+meteo,UMAP,0.76,0.58
+text,Autoencoder (aleasă),0.6,0.51
+text,UMAP,0.85,0.74
+toate,Autoencoder (aleasă),0.58,0.52
+toate,UMAP,0.86,0.79
